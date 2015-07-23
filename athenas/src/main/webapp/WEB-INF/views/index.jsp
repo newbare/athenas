@@ -1,12 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
 <html>
 
 
 	<head>
-		<title>Spring MVC com AngularJs</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Spring MVC com AngularJs </title>		
 		<link rel="stylesheet" type="text/css" href="<c:url value="/static/resources/css/screen.css"/>"/>
 	</head>
 
@@ -21,9 +20,9 @@
 
 				<div>
 					<p>
-						<h3>O Projeto Spring MVC foi implantado com sucesso- esta página é jsp.</h3>	
+						<h3>O Projeto Spring MVC foi implantado com Sucesso.. PÃ¡gina JSP.</h3>	
 					</p>				
-					<img src="<c:url value="/static/resources/gfx/angularjs.png"/>"/><br />
+					<a href="http://localhost.bb.com.br:8080/athenas/index.html" ><img src="<c:url value="/static/resources/gfx/angularjs.png"/>"/></a><br />
 				</div>
 
 				<form:form commandName="newMember" id="reg">
@@ -59,7 +58,7 @@
 				<h2>Members</h2>
 				<c:choose>
 					<c:when test="${members.size()==0}">
-						<em>Não existem Membros registrados na Base.</em>
+						<em>NÃ£o existem Membros registrados na Base.</em>
 					</c:when>
 					<c:otherwise>
 						<table class="simpletablestyle">
@@ -79,14 +78,14 @@
 										<td>${member.name}</td>
 										<td>${member.email}</td>
 										<td>${member.phoneNumber}</td>
-										<td><a href="<c:url value="/rest/members/${member.id}"/>">/rest/members/${member.id}</a></td>
+										<td><a href="http://localhost.bb.com.br:8080/athenas/rest/members/${member.id}">Json/${member.id}</a></td>
 								</c:forEach>
 							</tbody>
 						</table>
 						<table class="simpletablestyle">
 							<tr>
 								<td>
-									 URL REST para Todos os Membros: <a href="<c:url value="/rest/members"/>">/rest/members</a>
+								          REST URL todos os Contatos: <a href="http://localhost.bb.com.br:8080/athenas/rest/members">JSON</a>
 								</td>
 							</tr>
 						</table>
@@ -94,7 +93,7 @@
 				</c:choose>
 			</div>
 			<div id="aside">
-					<img src="<c:url value="/static/resources/gfx/spMvc.png"/>"/><br />
+					<img  src="<c:url value="/static/resources/gfx/spMvc.png"/>"/><br />
 					<img src="<c:url value="/static/resources/gfx/hiber.png"/>"/><br />
 					<img src="<c:url value="/static/resources/gfx/tom.png"/>"/>		<br />			
 			</div>

@@ -5,8 +5,8 @@ directoryApp.controller('DirectoryCtrl', function($scope, $http, $window) {
     // You can set the server ip in the url like this
     // http://localhost/path/index.html?ip=192.168.0.1
     var ip = QueryString()['ip'] ? QueryString()['ip'] : "localhost";
-    var urlAll = "http://" + ip + ":8080/athenas/rest/members/all";
-    var urlMember = "http://" + ip + ":8080/athenas/rest/members/id/";
+    var urlAll = "http://" + ip + ".bb.com.br:8080/athenas/rest/members/all";
+    var urlMember = "http://" + ip + ".bb.com.br:8080/athenas/rest/members/id/";
 
     // For Cross Domain request
     $http.defaults.useXDomain = true;
