@@ -60,7 +60,7 @@
 		</bean>
 
 		<util:map id="jpaPropertiesMap" key-type="java.lang.String" 		value-type="java.lang.String">
-			<entry key="hibernate.hbm2ddl.auto" value="update" /><!--Tipos de geração: update/ none/ validate/ create/create-drop -->
+			<entry key="hibernate.hbm2ddl.auto" value="update" />  <!--Tipos de geração: update/ none/ validate/ create/create-drop -->
 			<entry key="hibernate.format_sql" value="true" />
 		</util:map>
 		
